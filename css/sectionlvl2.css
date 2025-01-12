@@ -1,0 +1,474 @@
+@charset "UTF-8";
+.wrapperlvl2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Стиль для фона модального окна */
+.wrapperlvl2 .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Стиль для содержимого модального окна */
+.wrapperlvl2 .modal-content {
+  background-color: #fefefe;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+}
+
+/* Стиль для кнопок */
+.wrapperlvl2 .nav-wrapper {
+  border: 2px solid var(--colorlvl2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+}
+
+.wrapperlvl2 .note-wrapper {
+  width: 100%;
+  height: 95%;
+  border: 2px solid var(--colorlvl2);
+  background-image: url(./fon/fon.png);
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --color1: #F78888;
+  --color2: #F3D250;
+  --color3: #ECECEC;
+  --color4: #88BDBC;
+  --color5: #0000006a;
+  --color6: #000;
+}
+
+.wrapperlvl2 .header {
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--color5);
+  /* color: #fff; */
+  top: 0.1px;
+  width: 100%;
+  min-width: 300px;
+  height: 70px;
+  /* border: 1px solid red; */
+}
+
+.wrapperlvl2 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 95%;
+  /* border: 1px solid red; */
+}
+
+.wrapperlvl2 .nav div {
+  /* border: 2px solid red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.wrapperlvl2 .nav-one,
+.wrapperlvl2 .nav-two,
+.wrapperlvl2 .nav-thre,
+.wrapperlvl2 .nav-four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.wrapperlvl2 .nav-four {
+  font-size: 16px;
+  /* border: 1px solid red; */
+}
+
+.wrapperlvl2 .note-today,
+.wrapperlvl2 .note-week,
+.wrapperlvl2 .note-month,
+.wrapperlvl2 .note-quarter,
+.wrapperlvl2 .note-year {
+  font-size: 24px;
+}
+
+.wrapperlvl2 .note-wrapper button {
+  background: none;
+  border: none;
+  color: var(--color3);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.wrapperlvl2 button:hover {
+  color: var(--color5);
+}
+
+.wrapperlvl2 .note-color_white,
+.wrapperlvl2 .note-color_red,
+.wrapperlvl2 .note-color_yellow,
+.wrapperlvl2 .note-color_green {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.wrapperlvl2 .note-color_white:hover,
+.wrapperlvl2 .note-color_red:hover,
+.wrapperlvl2 .note-color_yellow:hover,
+.wrapperlvl2 .note-color_green:hover,
+.wrapperlvl2 .all:hover {
+  border: 3px solid var(--color5);
+}
+
+.wrapperlvl2 .note-color_white {
+  background-color: var(--color3);
+}
+
+.wrapperlvl2 .note-color_red {
+  background-color: var(--color1);
+}
+
+.wrapperlvl2 .note-color_yellow {
+  background-color: var(--color2);
+}
+
+.wrapperlvl2 .note-color_green {
+  background-color: var(--color4);
+}
+
+.wrapperlvl2 .create {
+  font-size: 35px;
+}
+
+.wrapperlvl2 .all {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--color3);
+  background: rgb(247, 136, 136);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(247, 136, 136)), color-stop(50%, rgb(243, 210, 80)), to(rgb(136, 189, 188)));
+  background: linear-gradient(90deg, rgb(247, 136, 136) 0%, rgb(243, 210, 80) 50%, rgb(136, 189, 188) 100%);
+}
+
+.wrapperlvl2 input[type=text] {
+  border-radius: 5px;
+  width: 80%;
+  padding: 0 0 0 15px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.wrapperlvl2 #notes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; /* Обеспечивает переход строк */
+  padding: 20px;
+  gap: 20px;
+}
+
+.wrapperlvl2 .note {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 22%;
+  flex: 1 0 22%; /* Устанавливает базовую ширину элемента и позволяет ему расти */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /* Учитывает отступы и границы */
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 300px;
+}
+
+.wrapperlvl2 .note:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.wrapperlvl2 .note-title,
+.wrapperlvl2 .note-title_input {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  width: auto;
+  min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.wrapperlvl2 .note-body,
+.wrapperlvl2 .note-body_textarea {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.wrapperlvl2 .note-date,
+.wrapperlvl2 .note-deadline {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  /* margin-bottom: 5px; */
+  /* border: 1px solid red; */
+}
+
+.wrapperlvl2.note-date-wrap,
+.wrapperlvl2.note-deadline-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  width: auto;
+  /* min-height: 20px; */
+  padding-bottom: 5px;
+  /* background-color: #fff; */
+  color: var(--color6);
+  /* border-radius: 5px; */
+}
+
+.wrapperlvl2 .edit-note {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  color: var(--color6);
+  font-size: 15px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.wrapperlvl2 .delete-note {
+  /* border: 1px solid red; */
+  background-color: #fff;
+  color: var(--color6);
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.wrapperlvl2 .edit-note:hover,
+.wrapperlvl2 .delete-note:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.wrapperlvl2 .popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color5);
+}
+
+.wrapperlvl2 .popup-content {
+  background-color: var(--color3);
+  height: 40%;
+  margin: 10% auto;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wrapperlvl2 #note-title {
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+  /* color: #fff; */
+  margin: 0;
+  padding: 10px;
+}
+
+.wrapperlvl2 .note-body_textarea {
+  width: 100%;
+  height: 60%;
+  font-size: 16px;
+  border-radius: 5px;
+  /* color: #fff; */
+  resize: none;
+  padding: 10px;
+}
+
+.wrapperlvl2 .color-picker {
+  width: 15%;
+}
+
+.wrapperlvl2 .close-btn {
+  background-color: #fff;
+  color: var(--color6);
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.wrapperlvl2 .save-btn {
+  background-color: #fff;
+  color: var(--color6);
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.wrapperlvl2 .close-btn:hover,
+.wrapperlvl2 .save-btn:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Модальное окно предупреждающее об удалении заметки */
+/* ======================================================== */
+.wrapperlvl2 .modal {
+  display: none;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--color5);
+}
