@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
 }
 
 :root {
@@ -153,7 +153,7 @@ body {
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl1 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,7 +1038,7 @@ color-picker .wrapperlvl2 .modal .modal-content .note-wrapper .note .note-date .
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl3 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1107,7 +1107,7 @@ color-picker .wrapperlvl2 .modal .modal-content .note-wrapper .note .note-date .
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl4 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1176,7 +1176,7 @@ color-picker .wrapperlvl2 .modal .modal-content .note-wrapper .note .note-date .
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl5 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1245,7 +1245,7 @@ color-picker .wrapperlvl2 .modal .modal-content .note-wrapper .note .note-date .
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl6 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1314,7 +1314,7 @@ color-picker .wrapperlvl2 .modal .modal-content .note-wrapper .note .note-date .
 
 /* Стиль для содержимого модального окна */
 .wrapperlvl7 .modal-content {
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   border: 1px solid #888;
   display: -webkit-box;
   display: -ms-flexbox;
