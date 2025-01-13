@@ -299,7 +299,7 @@ body {
 .wrapperlvl2 .modal .modal-content .note-wrapper {
   width: 100%;
   min-height: 100%;
-  background-image: url(./fon/fon.png);
+  background-image: url(../fon/fon.png);
   font-family: Arial, sans-serif;
 }
 
